@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="CircleView">
+        <attr name="dimension" format="dimension" />
+        <attr name="angleStart" format="float" />
+        <attr name="angleSweep" format="float" />
+        <attr name="colorBackground" format="color" />
+        <attr name="colorForeground" format="color" />
+    </declare-styleable>
+</resources>

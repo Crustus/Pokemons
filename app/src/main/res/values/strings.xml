@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_new_job">New Job</string>
+    <string name="pokemons">Pokemons</string>
+    <string name="pokemon">Pokemon</string>
+    <string name="stats">Statistics</string>
+    <string name="abilities">Abilities</string>
+    <string name="moves">Moves</string>
+</resources>

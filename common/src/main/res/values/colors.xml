@@ -1,0 +1,33 @@
+<resources>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+    <array name="colorForeground">
+        <item>#F44336</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#3F51B5</item>
+        <item>#00BCD4</item>
+        <item>#4CAF50</item>
+        <item>#FFEB3B</item>
+        <item>#FF9800</item>
+        <item>#BF360C</item>
+    </array>
+
+    <array name="colorBackground">
+        <item>#8F2121</item>
+        <item>#750D3B</item>
+        <item>#4C136E</item>
+        <item>#311C70</item>
+        <item>#1E276C</item>
+        <item>#003D61</item>
+        <item>#1C4C1F</item>
+        <item>#8F6116</item>
+        <item>#853C00</item>
+        <item>#601C07</item>
+    </array>
+
+</resources>
