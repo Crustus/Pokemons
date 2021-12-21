@@ -5,14 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import cz.crusty.common.recycler.VerticalSpaceItemDivider
 import cz.crusty.common.recycler.endless.EndlessRecyclerListener
 import cz.crusty.common.util.dpToPx
+import cz.crusty.common.util.flowWhenResumed
+import cz.crusty.common.util.logThread
 import cz.crusty.pokemon.R
 import cz.crusty.pokemon.base.BaseFragment
-import cz.crusty.common.util.logThread
 import kotlinx.android.synthetic.main.fragment_dashboard.view.*
 import kotlinx.coroutines.flow.collect
 
@@ -34,7 +34,7 @@ class DashboardFragment : BaseFragment() {
 
         homeViewModel.apply {
 
-            lifecycleScope.launchWhenResumed {
+            flowWhenResumed {
                 pokemon.collect { value ->
                     //logThread("Pokemon ${value?.count}")
                     value?.results?.let { pokemonAdapter.add(it) }

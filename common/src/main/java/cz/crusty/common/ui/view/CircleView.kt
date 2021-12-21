@@ -1,4 +1,4 @@
-package cz.crusty.common.view
+package cz.crusty.common.ui.view
 
 import android.content.Context
 import android.graphics.Canvas

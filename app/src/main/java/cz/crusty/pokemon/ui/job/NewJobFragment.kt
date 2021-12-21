@@ -11,9 +11,9 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
+import cz.crusty.common.ui.dialog.imagepicker.ImagePickerBottomSheet
+import cz.crusty.common.ui.dialog.imagepicker.Item
 import cz.crusty.pokemon.R
-import cz.crusty.pokemon.ui.dialog.imagepicker.ImagePickerBottomSheet
-import cz.crusty.pokemon.ui.dialog.imagepicker.Item
 import kotlinx.android.synthetic.main.fragment_new_job.*
 import kotlinx.android.synthetic.main.fragment_new_job.view.*
 import org.koin.androidx.viewmodel.ext.android.viewModel

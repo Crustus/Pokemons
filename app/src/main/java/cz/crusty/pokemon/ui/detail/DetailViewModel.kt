@@ -1,7 +1,7 @@
 package cz.crusty.pokemon.ui.detail
 
-import cz.crusty.pokemon.base.BaseViewModel
 import cz.crusty.common.util.logThread
+import cz.crusty.pokemon.base.BaseViewModel
 import cz.crusty.pokemon.repository.remote.API
 import cz.crusty.pokemon.repository.remote.model.PokemonResponse
 import kotlinx.coroutines.flow.MutableStateFlow

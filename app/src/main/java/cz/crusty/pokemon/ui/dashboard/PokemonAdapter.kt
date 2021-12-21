@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import cz.crusty.pokemon.R
 import cz.crusty.pokemon.repository.remote.model.PokemonListResponse
+import timber.log.Timber
 
 class PokemonAdapter(val onClick: (PokemonListResponse.Item, position: Int) -> Unit) : RecyclerView.Adapter<PokemonViewHolder>() {
 
@@ -30,6 +31,7 @@ class PokemonAdapter(val onClick: (PokemonListResponse.Item, position: Int) -> U
     override fun getItemCount(): Int  = items.size
 
     fun add(newItems: List<PokemonListResponse.Item>) {
+        Timber.d("adding new %d, items %d", newItems.size, items.size)
         items.addAll(newItems)
         notifyDataSetChanged()
     }

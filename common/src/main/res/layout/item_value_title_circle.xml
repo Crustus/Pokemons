@@ -8,7 +8,7 @@
     android:padding="8dp"
     android:gravity="center">
 
-    <cz.crusty.common.view.CircleView
+    <cz.crusty.common.ui.view.CircleView
         android:id="@+id/circle"
         android:layout_width="80dp"
         android:layout_height="80dp"

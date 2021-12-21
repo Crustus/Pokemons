@@ -1,4 +1,4 @@
-package cz.crusty.pokemon.ui.dialog.imagepicker
+package cz.crusty.common.ui.dialog.imagepicker
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import cz.crusty.pokemon.R
+import cz.crusty.common.R
 import kotlinx.android.synthetic.main.image_picker_bottom_sheet.view.*
 
 class ImagePickerBottomSheet : BottomSheetDialogFragment() {

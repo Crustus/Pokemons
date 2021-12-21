@@ -1,8 +1,8 @@
 package cz.crusty.pokemon.ui.dashboard
 
 import android.net.Uri
-import cz.crusty.pokemon.base.BaseViewModel
 import cz.crusty.common.util.logThread
+import cz.crusty.pokemon.base.BaseViewModel
 import cz.crusty.pokemon.repository.remote.API
 import cz.crusty.pokemon.repository.remote.model.PokemonListResponse
 import kotlinx.coroutines.flow.MutableStateFlow

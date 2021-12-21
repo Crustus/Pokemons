@@ -4,7 +4,6 @@ import android.net.Uri
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import cz.crusty.common.util.logThread
 import cz.crusty.pokemon.repository.remote.API
 import cz.crusty.pokemon.repository.remote.Result
 import cz.crusty.pokemon.repository.remote.model.NewJobResponse

@@ -10,13 +10,13 @@ import android.view.ViewGroup
 import androidx.core.text.bold
 import androidx.core.text.inSpans
 import androidx.core.text.scale
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
 import cz.crusty.common.adapter.ValueTitle
 import cz.crusty.common.adapter.ValueTitleAdapter
 import cz.crusty.common.adapter.ValueTitleCircleAdapter
 import cz.crusty.common.util.ColorPalette
 import cz.crusty.common.util.dpToPx
+import cz.crusty.common.util.flowWhenResumed
 import cz.crusty.pokemon.R
 import cz.crusty.pokemon.base.BaseFragment
 import cz.crusty.pokemon.repository.remote.model.PokemonResponse
@@ -50,8 +50,6 @@ class DetailFragment : BaseFragment() {
 
         val root = inflater.inflate(R.layout.fragment_detail, container, false)
 
-
-
         root.apply {
 
             stats.apply {
@@ -73,7 +71,7 @@ class DetailFragment : BaseFragment() {
 
         viewModel.apply {
 
-            lifecycleScope.launchWhenResumed {
+            flowWhenResumed {
                 pokemon.collect { value ->
                     value?.let { updateUI(it) }
                 }
