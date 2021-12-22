@@ -77,6 +77,12 @@ class DetailFragment : BaseFragment() {
                 }
             }
 
+            flowWhenResumed {
+                loading.collect {
+                    showLoading(it)
+                }
+            }
+
         }
 
         return root

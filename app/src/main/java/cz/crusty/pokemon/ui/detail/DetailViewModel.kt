@@ -4,6 +4,7 @@ import cz.crusty.common.util.logThread
 import cz.crusty.pokemon.base.BaseViewModel
 import cz.crusty.pokemon.repository.remote.API
 import cz.crusty.pokemon.repository.remote.model.PokemonResponse
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -24,6 +25,8 @@ class DetailViewModel(
     private fun loadData() {
         call(
             onRequest = {
+                // delayed for demo and loading show off
+                delay(500)
                 api.getPokemon(url)
             },
             onSuccess = {
