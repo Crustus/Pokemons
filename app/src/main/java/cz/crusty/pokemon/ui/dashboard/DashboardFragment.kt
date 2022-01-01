@@ -1,9 +1,7 @@
 package cz.crusty.pokemon.ui.dashboard
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import cz.crusty.common.recycler.VerticalSpaceItemDivider
@@ -22,6 +20,11 @@ class DashboardFragment : BaseFragment() {
 
     private lateinit var pokemonAdapter: PokemonAdapter
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -65,6 +68,21 @@ class DashboardFragment : BaseFragment() {
         }
 
         return root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_camera -> {
+                findNavController().navigate(DashboardFragmentDirections.actionNavDashboardToCameraFragment())
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     override fun onStart() {

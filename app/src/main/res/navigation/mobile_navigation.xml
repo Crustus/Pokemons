@@ -14,6 +14,9 @@
             android:id="@+id/action_nav_dashboard_to_detailFragment"
             app:destination="@id/detailFragment">
         </action>
+        <action
+            android:id="@+id/action_nav_dashboard_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
     </fragment>
 
     <fragment
@@ -31,5 +34,11 @@
             android:name="pokemonUrl"
             app:argType="string" />
     </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="cz.crusty.pokemon.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
 
 </navigation>
